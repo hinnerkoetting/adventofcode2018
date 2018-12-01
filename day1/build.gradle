@@ -19,7 +19,12 @@ test {
     }
 }
 
-task run(type: JavaExec) {
-    main 'Day1'
+task runPart1(type: JavaExec) {
+    main 'Day1Part1'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runPart2(type: JavaExec) {
+    main 'Day1Part2'
     classpath = sourceSets.main.runtimeClasspath
 }

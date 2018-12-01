@@ -3,4 +3,5 @@ Run tests with
 ```./gradlew code```
 
 Run program with
-```./gradlew run```
+```./gradlew runPart1```
+```./gradlew runPart2```
