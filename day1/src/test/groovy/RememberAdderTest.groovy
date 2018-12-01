@@ -12,4 +12,17 @@ class RememberAdderTest extends Specification {
         rememberAdder.getFirstDuplicate() == 0
     }
 
+    void example2() {
+        given:
+        def rememberAdder = new LoopingRememberAdder();
+        when:
+        rememberAdder.add("+3")
+        rememberAdder.add("+3")
+        rememberAdder.add("+4")
+        rememberAdder.add("-2")
+        rememberAdder.add("-4")
+        then:
+        rememberAdder.determineFirstDuplicate() == 10
+    }
+
 }

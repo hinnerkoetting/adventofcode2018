@@ -28,4 +28,8 @@ class RememberAdder {
         }
         return firstDuplicate;
     }
+
+    boolean isDuplicateFound() {
+        return duplicateFound;
+    }
 }
