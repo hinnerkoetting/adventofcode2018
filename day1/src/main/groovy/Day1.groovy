@@ -1,4 +1,8 @@
+Adder adder = new Adder();
 
-int sum = 0;
-println 'test'
+new File('src/main/resources/input').each {
+    String line -> adder.add(line);
+}
+
+println "Result is $adder.sum"
 
