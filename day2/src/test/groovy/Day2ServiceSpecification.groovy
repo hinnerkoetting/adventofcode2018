@@ -73,5 +73,6 @@ class Day2ServiceSpecification extends Specification {
         then:
         day2Service.numberOfTwosFound() == 4
         day2Service.numberOfThreesFound() == 3
+        day2Service.calculateProduct() == 12
     }
 }

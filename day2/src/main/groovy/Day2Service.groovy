@@ -21,11 +21,19 @@ class Day2Service {
     }
 
     int numberOfTwosFound() {
-        inputRows.stream ().map { containsLetterTwoTimes(it) }.filter { it }.count()
+        numberOfNsFound(2)
     }
 
     int numberOfThreesFound() {
-        inputRows.stream ().map { containsLetterThreeTimes(it) }.filter { it }.count()
+        numberOfNsFound(3)
+    }
+
+    int numberOfNsFound(int n) {
+        inputRows.stream ().map { containsLetterNTimes(it, n) }.filter { it }.count()
+    }
+
+    int calculateProduct() {
+        numberOfNsFound(3) * numberOfNsFound(2)
     }
 
     int occurrences(String row, int searchCharacter) {
