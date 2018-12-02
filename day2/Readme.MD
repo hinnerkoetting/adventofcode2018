@@ -5,3 +5,8 @@
 ```./gradlew test```
 
 ## Start program
+In root directory
+### Part 1
+```./gradlew day2:runPart2```
+### Part 2
+```./gradlew day2:runPart2```

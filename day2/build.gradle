@@ -1,4 +1,9 @@
 task runPart1(type: JavaExec) {
-    main 'day2'
+    main 'Day2Part1'
+    classpath = sourceSets.main.runtimeClasspath
+}
+
+task runPart2(type: JavaExec) {
+    main 'Day2Part2'
     classpath = sourceSets.main.runtimeClasspath
 }
