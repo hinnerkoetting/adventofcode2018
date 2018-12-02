@@ -2,7 +2,7 @@
 
 ## Run tests with
 
-```./gradlew code```
+```./gradlew test``
 
 ## Start program
 ### Part 1
