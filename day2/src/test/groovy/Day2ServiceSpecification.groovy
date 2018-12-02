@@ -75,4 +75,22 @@ class Day2ServiceSpecification extends Specification {
         day2Service.numberOfThreesFound() == 3
         day2Service.calculateProduct() == 12
     }
+
+    def part2() {
+        given:
+        Day2Service day2Service = new Day2Service();
+
+        when:
+        day2Service.addInputRow('abcde')
+        day2Service.addInputRow('fghij')
+        day2Service.addInputRow('klmno')
+        day2Service.addInputRow('pqrst')
+        day2Service.addInputRow('fguij')
+        day2Service.addInputRow('axcye')
+        day2Service.addInputRow('wvxyz')
+
+        then:
+        day2Service.findCorrectBoxIds() == ['fghij', 'fguij']
+        day2Service.findMatchingCharacters() == 'fgij'
+    }
 }
