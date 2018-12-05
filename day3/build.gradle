@@ -1,4 +1,4 @@
-task runPart1(type: JavaExec) {
+task run(type: JavaExec) {
     main 'Day3'
     classpath = sourceSets.main.runtimeClasspath
 }
