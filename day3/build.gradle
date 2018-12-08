@@ -1,4 +1,3 @@
-task run(type: JavaExec) {
+task run(type: GroovyRunTask) {
     main 'Day3'
-    classpath = sourceSets.main.runtimeClasspath
 }

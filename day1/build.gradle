@@ -1,9 +1,8 @@
-task runPart1(type: JavaExec) {
+task runPart1(type: GroovyRunTask) {
     main 'Day1Part1'
-    classpath = sourceSets.main.runtimeClasspath
+
 }
 
-task runPart2(type: JavaExec) {
+task runPart2(type: GroovyRunTask) {
     main 'Day1Part2'
-    classpath = sourceSets.main.runtimeClasspath
 }
